@@ -1,0 +1,20 @@
+/ Portfolio Grid Section
+%section#portfolio.bg-light-gray
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2.section-heading Portfolio
+        %h3.section-subheading.text-muted Some of our best work for you to see
+    .row
+      - @projects.each do |project|
+        .col-md-4.col-sm-6.portfolio-item
+          %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal_#{project.id}"}
+            .portfolio-hover
+              .portfolio-hover-content
+                %i.fa.fa-plus.fa-3x#p-folio{id: project.id}
+            = image_tag project.image.url, class: "img-responsive"
+          .portfolio-caption
+            %h4
+              = project.title
+            %p.text-muted
+              = project.description
