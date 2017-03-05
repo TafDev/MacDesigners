@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: macdesigners-com
+  api_key: '743475252716925'
+  api_secret: mzoupfaFJSEHlA_JHRt-5cNsjVo
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: macdesigners-com
+  api_key: '743475252716925'
+  api_secret: mzoupfaFJSEHlA_JHRt-5cNsjVo
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: macdesigners-com
+  api_key: '743475252716925'
+  api_secret: mzoupfaFJSEHlA_JHRt-5cNsjVo
+  enhance_image_tag: true
+  static_image_support: false
